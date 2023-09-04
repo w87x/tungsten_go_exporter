@@ -1,0 +1,4 @@
+FROM alpine:3.18
+WORKDIR /
+COPY /tungsten_go_exporter /tungsten_go_exporter
+CMD ["/tungsten_go_exporter","--config","/etc/tf_exporter.yaml"]

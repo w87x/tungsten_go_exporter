@@ -1,0 +1,15 @@
+web:
+  listen: <local_ip>:<local_port>
+keystone:
+  url: https://<keystone_addr>:35357/v3/auth/tokens
+  user: <user>
+  password: <password>
+  domain: <domain>
+  project: <project>
+  project_domain: <project_domain>
+  tls: false
+scrape:
+  url: "http://<tungsten_addr>:8081"
+  retries: 3
+  timeout: 30
+  threads: 200
